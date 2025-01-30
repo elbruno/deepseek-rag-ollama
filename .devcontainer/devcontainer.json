@@ -27,7 +27,7 @@
     32001
   ],
   "postCreateCommand": "sudo dotnet workload update",
-  "postStartCommand": "ollama pull all-minilm",
+  "postStartCommand": "ollama pull all-minilm & ollama pull deepseek-r1",
   "remoteUser": "vscode",
   "hostRequirements": {
     "memory": "8gb",
