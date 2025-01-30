@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35617.110 d17.13
+VisualStudioVersion = 17.13.35617.110
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAG=DeepSeek-R1-Ollama", "RAG=DeepSeek-R1-Ollama.csproj", "{5C014F25-E1E3-3EAC-2E84-E34E0F346AE3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RAG=DeepSeek-R1-Ollama", "src\RAG=DeepSeek-R1-Ollama.csproj", "{6FBE404D-C54E-4DB7-A7AE-8E683F8119DF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5C014F25-E1E3-3EAC-2E84-E34E0F346AE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C014F25-E1E3-3EAC-2E84-E34E0F346AE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C014F25-E1E3-3EAC-2E84-E34E0F346AE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C014F25-E1E3-3EAC-2E84-E34E0F346AE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FBE404D-C54E-4DB7-A7AE-8E683F8119DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FBE404D-C54E-4DB7-A7AE-8E683F8119DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FBE404D-C54E-4DB7-A7AE-8E683F8119DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FBE404D-C54E-4DB7-A7AE-8E683F8119DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
