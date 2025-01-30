@@ -36,7 +36,7 @@ var modelIdEmbeddings = "all-minilm";
 // questions
 var questionEn = "What is Bruno's favourite super hero?";
 var questionEn2 = "who watched venom 3?";
-var question = questionEn;
+var question = questionEn2;
 
 // intro
 SpectreConsoleOutput.DisplayTitle(modelIdChat);
