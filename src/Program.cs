@@ -63,7 +63,6 @@ await foreach (var result in response)
 // separator
 Console.WriteLine("");
 SpectreConsoleOutput.DisplaySeparator();
-SpectreConsoleOutput.DisplayTitleH2($"{modelIdChat} response (using semantic memory).");
 
 var configOllamaKernelMemory = new OllamaConfig
 {
@@ -76,12 +75,25 @@ var memory = new KernelMemoryBuilder()
     .WithOllamaTextEmbeddingGeneration(configOllamaKernelMemory)
     .Build();
 
-await memory.ImportTextAsync("Gisela's favourite super hero is Batman");
-await memory.ImportTextAsync("The last super hero movie watched by Gisela was Venom 3");
-await memory.ImportTextAsync("Bruno's favourite super hero is Invincible");
-await memory.ImportTextAsync("The last super hero movie watched by Bruno was Venom 3");
-await memory.ImportTextAsync("Bruno don't like the super hero movie: Eternals");
+var informationList = new List<string>
+{
+    "Gisela's favourite super hero is Batman",
+    "The last super hero movie watched by Gisela was Venom 3",
+    "Bruno's favourite super hero is Invincible",
+    "The last super hero movie watched by Bruno was Venom 3",
+    "Bruno don't like the super hero movie: Eternals"
+};
 
+SpectreConsoleOutput.DisplayTitleH2($"Information List");
+
+
+foreach (var info in informationList)
+{
+    SpectreConsoleOutput.DisplayTitleH3($"{info}");
+    await memory.ImportTextAsync(info);
+}
+
+SpectreConsoleOutput.DisplayTitleH2($"{modelIdChat} response (using semantic memory).");
 var answer = memory.AskStreamingAsync(question);
 await foreach (var result in answer)
 {
